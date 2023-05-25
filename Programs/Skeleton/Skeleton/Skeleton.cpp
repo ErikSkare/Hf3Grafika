@@ -297,7 +297,7 @@ class Terrain {
 
 	float minZ = (float)INT_MAX, maxZ = (float)-INT_MAX;
 
-	unsigned int vao;
+	unsigned int vao = NULL;
 
 public:
 	Terrain(int n, float a0, float size, int resolution): n(n), a0(a0), size(size), resolution(resolution) {
@@ -359,6 +359,8 @@ public:
 
 private:
 	float getHeightAt(float x, float y) {
+		x = -M_PI + (x + size / 2) / size * 2 * M_PI;
+		y = -M_PI + (y + size / 2) / size * 2 * M_PI;
 		float value = 0;
 		for (int f1 = 0; f1 <= n; ++f1) {
 			for (int f2 = 0; f2 <= n; ++f2) {
@@ -372,6 +374,8 @@ private:
 	}
 
 	vec3 getNormalAt(float x, float y) {
+		x = -M_PI + (x + size / 2) / size * 2 * M_PI;
+		y = -M_PI + (y + size / 2) / size * 2 * M_PI;
 		float hx = 0, hy = 0;
 		for (int f1 = 0; f1 <= n; ++f1) {
 			for (int f2 = 0; f2 <= n; ++f2) {
@@ -438,9 +442,9 @@ const char * const fragmentSource = R"(
 	}
 )";
 
-DirectionalLight dLight(vec3(-1, -1, -3), vec3(1.0f, 165.0f / 255.0f, 0.0f ));
+DirectionalLight dLight(vec3(-1, -1, -4), vec3(1.0f, 165.0f / 255.0f, 0.0f ));
 Body body(vec3(0, 0, 12), 0.25, 0.5, 1.85, 80, 2, 400);
-Terrain terrain(2, 1, 20, 200);
+Terrain terrain(8, 0.8, 20, 200);
 DroneCamera dCamera(vec3(0, 6, 14), vec3(0, 0, 10), vec3(0, 0, 1), 10);
 BodyCamera bCamera(body.getSideACenter(), body.getSideANormal(), body.getSideA());
 

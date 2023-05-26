@@ -18,8 +18,8 @@
 //
 // NYILATKOZAT
 // ---------------------------------------------------------------------------------------------
-// Nev    : 
-// Neptun : 
+// Nev    : Skáre Erik
+// Neptun : Z7ZF6D
 // ---------------------------------------------------------------------------------------------
 // ezennel kijelentem, hogy a feladatot magam keszitettem, es ha barmilyen segitseget igenybe vettem vagy
 // mas szellemi termeket felhasznaltam, akkor a forrast es az atvett reszt kommentekben egyertelmuen jeloltem.
@@ -177,7 +177,7 @@ public:
 		this->material.ks = vec3(0, 0, 0);
 		this->material.shininess = 1;
 	}
-
+	
 	void draw(Camera& camera) {
 		glBindVertexArray(vao);
 		material.setUniforms();
@@ -295,7 +295,7 @@ class Terrain {
 	int resolution;
 	float** phases;
 
-	float minZ = (float)INT_MAX, maxZ = (float)-INT_MAX;
+	float minZ = (float)1e9, maxZ = (float)-1e9;
 
 	unsigned int vao = NULL;
 
@@ -308,12 +308,12 @@ public:
 				phases[i][j] = randomFloatBetween(0, 2 * M_PI);
 			}
 		}
-		material.kdFrom = { 69.0f / 255.0f, 252.0f / 255.0f, 3.0f / 255.0f };
-		material.kdTo = { 148.0f / 255.0f, 94.0f / 255.0f, 58.0f / 255.0f };
-		material.ks = { 0.2f, 0.1f, 0.1f };
+		material.kdFrom = { 34.0f / 255.0f, 139.0f / 255.0f, 34.0f / 255.0f };
+		material.kdTo = { 165.0f / 255.0f, 42.0f / 255.0f, 42.0f / 255.0f };
+		material.ks = { 0.1f, 0.1f, 0.1f };
 		material.shininess = 5;
 	}
-
+	
 	void create() {
 		std::vector<VertexData> vertices;
 		float step = size / (resolution - 1);
@@ -420,7 +420,7 @@ const char * const vertexSource = R"(
 		vec4 wNormal = MInv * vec4(norm, 0);
 
 		vec3 L = normalize(-wLdir);
-		vec3 V = normalize(wEye * wPos.z - wPos.xyz);
+		vec3 V = normalize(wEye * wPos.w - wPos.xyz);
 		vec3 N = normalize(wNormal.xyz);
 		vec3 H = normalize(L + V);
 
@@ -442,9 +442,9 @@ const char * const fragmentSource = R"(
 	}
 )";
 
-DirectionalLight dLight(vec3(-1, -1, -4), vec3(1.0f, 165.0f / 255.0f, 0.0f ));
+DirectionalLight dLight(vec3(1, 1, -4), vec3(1.0f, 1.0f, 1.0f ));
 Body body(vec3(0, 0, 12), 0.25, 0.5, 1.85, 80, 2, 400);
-Terrain terrain(8, 0.8, 20, 200);
+Terrain terrain(8, 0.8, 20, 300);
 DroneCamera dCamera(vec3(0, 6, 14), vec3(0, 0, 10), vec3(0, 0, 1), 10);
 BodyCamera bCamera(body.getSideACenter(), body.getSideANormal(), body.getSideA());
 

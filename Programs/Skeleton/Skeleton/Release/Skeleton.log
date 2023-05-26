@@ -1,1 +1,33 @@
-﻿  Skeleton.vcxproj -> C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\bin\Skeleton.exe
+﻿  Skeleton.cpp
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\framework.h(167,17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(84,11): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(83,17): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(159): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(234,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(235,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(236,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(237,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(240,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(241,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(242,65): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(243,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(246,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(247,68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(248,68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(249,69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(308,1): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(362,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(363,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(368,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(377,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(378,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(383,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(384,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(446,15): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\Skeleton\Skeleton.cpp(447,32): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating code
+  0 of 246 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Skeleton.vcxproj -> C:\Users\Acer\Desktop\Hf3\Programs\Skeleton\bin\Skeleton.exe
